@@ -6,7 +6,7 @@
     "start": "vite --open",
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:npm": "tsc && vite build --mode package",
+    "package": "tsc && vite build --mode package",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",

@@ -19,9 +19,10 @@ export default defineConfig(({ command, mode }) => {
         logOverride: { 'this-is-undefined-in-esm': 'silent' }
       },
       build: {
+        outDir: resolve(__dirname, '../lib'),
         sourcemap: true,
         lib: {
-          entry: resolve(__dirname, 'src/component/Link.tsx'),
+          entry: resolve(__dirname, 'src/component/index.ts'),
           name: 'Link',
           formats: ['es', 'umd'],
           fileName: (format) => `index.${format}.js`,
@@ -29,7 +30,6 @@ export default defineConfig(({ command, mode }) => {
         rollupOptions: {
           external: ['react', 'react-dom', 'styled-components'],
           output: {
-            dir: resolve(__dirname, 'build'),
             globals: {
               react: 'React',
               'react-dom': 'ReactDOM',
