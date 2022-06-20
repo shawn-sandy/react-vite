@@ -19,11 +19,11 @@ const Link = ({ page, children }: any) => {
   return (
     <a
       className={status}
-      href={page || '#'}
+      href={page ?? '#'}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      {children}
+      {children ?? "Default Link"}
     </a>
   )
 }

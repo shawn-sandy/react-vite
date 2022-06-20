@@ -6,10 +6,12 @@
     "start": "vite --open",
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:npm": "tsc && vite build --mode npm",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "stories": "ladle serve"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -17,6 +19,7 @@
     "vite-plugin-dts": "^1.2.0"
   },
   "devDependencies": {
+    "@ladle/react": "^1.1.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/react-test-renderer": "^18.0.0",
