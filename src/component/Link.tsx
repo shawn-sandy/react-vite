@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 
 const STATUS = {
   HOVERED: 'hovered',
   NORMAL: 'normal',
 }
 
-const Link = ({ page, children }: any) => {
+interface Links {
+  page?: string;
+  children?: ReactNode
+}
+
+const Link = ({ page, children }: Links) => {
   const [status, setStatus] = useState(STATUS.NORMAL)
 
   const onMouseEnter = () => {

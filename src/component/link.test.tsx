@@ -16,7 +16,6 @@ describe("Test link", () => {
 
     const link = "https://google.com/"
     const label = " Search on Google"
-
     const linkContainer = render(<Link page={link}>{label}</Link>)
     const linkElement = screen.getByRole('link');
     screen.debug(linkElement)
