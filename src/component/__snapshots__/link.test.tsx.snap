@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Test link > component renders as expected to 1`] = `
+exports[`<Link> > component renders as expected to 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -75,7 +75,7 @@ exports[`Test link > component renders as expected to 1`] = `
 }
 `;
 
-exports[`Test link > should accept props 1`] = `
+exports[`<Link> > should accept props 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -84,7 +84,7 @@ exports[`Test link > should accept props 1`] = `
         class="normal"
         href="https://google.com/"
       >
-         Search on Google
+        Search on Google
       </a>
     </div>
   </body>,
@@ -93,7 +93,7 @@ exports[`Test link > should accept props 1`] = `
       class="normal"
       href="https://google.com/"
     >
-       Search on Google
+      Search on Google
     </a>
   </div>,
   "debug": [Function],
