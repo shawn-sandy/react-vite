@@ -14,10 +14,12 @@ describe("Test link", () => {
 
   it("should accept props", () => {
 
-    const link = "https://google.com"
+    const link = "https://google.com/"
     const label = " Search on Google"
 
-    const linkContainer = render(<Link page={link}>{label}</Link> )
+    const linkContainer = render(<Link page={link}>{label}</Link>)
+    const linkElement = screen.getByRole('link');
+    screen.debug(linkElement)
 
     expect(linkContainer).toMatchSnapshot()
     screen.debug()

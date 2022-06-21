@@ -82,7 +82,7 @@ exports[`Test link > should accept props 1`] = `
     <div>
       <a
         class="normal"
-        href="https://google.com"
+        href="https://google.com/"
       >
          Search on Google
       </a>
@@ -91,7 +91,7 @@ exports[`Test link > should accept props 1`] = `
   "container": <div>
     <a
       class="normal"
-      href="https://google.com"
+      href="https://google.com/"
     >
        Search on Google
     </a>
