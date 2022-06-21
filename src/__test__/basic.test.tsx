@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import { render, screen } from "@testing-library/react"
 import { test, expect } from 'vitest'
 import Link from '../component/Link'
 
