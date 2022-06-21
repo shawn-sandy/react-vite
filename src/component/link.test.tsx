@@ -21,8 +21,6 @@ describe("<Link>", () => {
     const linkElement = screen.getByRole('link');
     screen.debug(linkElement)
     expect(screen.getByText(label)).toBeDefined()
-    expect(linkContainer).toMatchSnapshot()
-    screen.debug()
 
   })
 })
