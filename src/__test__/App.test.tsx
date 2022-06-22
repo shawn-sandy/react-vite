@@ -7,7 +7,7 @@ import App from '../App'
 
 describe('<App>', () => {
 
-  test('App component should render correctly', () => {
+  it('App component should render correctly', () => {
     const Component = render(<App/>)
 
 
