@@ -2,7 +2,7 @@ import React from 'react';
 
 import { describe, expect, test, it  } from 'vitest';
 import { render, screen  } from '@testing-library/react';
-import Link from"./Link"
+import Link from"../Link"
 
 describe("<Link>", () => {
   test("component renders as expected to", () => {
@@ -20,6 +20,7 @@ describe("<Link>", () => {
     const linkContainer = render(<Link page={link}>{label}</Link>)
     const linkElement = screen.getByRole('link');
     screen.debug(linkElement)
+    expect(linkElement).toMatchSnapshot()
     expect(screen.getByText(label)).toBeDefined()
 
   })

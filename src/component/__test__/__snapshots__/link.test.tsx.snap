@@ -74,3 +74,12 @@ exports[`<Link> > component renders as expected to 1`] = `
   "unmount": [Function],
 }
 `;
+
+exports[`<Link> > should accept props 1`] = `
+<a
+  class="normal"
+  href="https://google.com/"
+>
+  Search on Google
+</a>
+`;
