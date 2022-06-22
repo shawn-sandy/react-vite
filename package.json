@@ -9,9 +9,8 @@
         "package": "tsc && vite build --mode package",
         "preview": "vite preview",
         "test": "vitest",
-        "test:ui": "vitest --ui",
-        "test:coverage": "vitest --coverage",
-        "upload": "npm run build && npx @indeed/design-tech-publisher"
+        "test:ui": "vitest --coverage --ui",
+        "test:coverage": "vitest --coverage"
     },
     "dependencies": {
         "react": "^18.0.0",
