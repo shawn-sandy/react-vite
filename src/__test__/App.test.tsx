@@ -1,22 +1,15 @@
 import React from 'react';
 
-import { describe, expect, it, test } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 
 import App from '../App'
 
 describe('<App>', () => {
 
-  it('App component should render correctly', () => {
-    const Component = render(<App/>)
+    it('the title is visible', () => {
+      render(<App />)
+      expect(screen.getByText(/Hello Vite \+ React!/i)).toBeInTheDocument()
+    })
 
-
-    const logo = screen.getByRole('img', {  name: /logo/i});
-    screen.debug(logo)
-
-    expect(Component).toMatchSnapshot();
-    expect(Component.getAllByRole('link', { name: /learn react/i})).toBeInTheDocument()
-    expect(Component.getByRole('link', { name: /vite docs/i})).toBeDefined()
-    expect(Component.getByRole('button', {  name: /count is: 0/i})).toBeDefined()
-  })
 })
