@@ -15,7 +15,7 @@ describe('<App>', () => {
     screen.debug(logo)
 
     expect(Component).toMatchSnapshot();
-    expect(Component.getAllByRole('link', { name: /learn react/i})).toBeDefined()
+    expect(Component.getAllByRole('link', { name: /learn react/i})).toBeInTheDocument()
     expect(Component.getByRole('link', { name: /vite docs/i})).toBeDefined()
     expect(Component.getByRole('button', {  name: /count is: 0/i})).toBeDefined()
   })

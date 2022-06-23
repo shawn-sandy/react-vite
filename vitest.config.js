@@ -5,6 +5,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    setupFiles: './setupTest.ts',
     coverage: {
       reporter: ['text', 'html'],
       exclude: [

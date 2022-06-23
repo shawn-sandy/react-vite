@@ -19,7 +19,9 @@
     },
     "devDependencies": {
         "@ladle/react": "^1.1.1",
+        "@testing-library/jest-dom": "^5.16.4",
         "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^14.2.1",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
         "@types/react-test-renderer": "^18.0.0",
