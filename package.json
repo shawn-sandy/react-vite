@@ -10,7 +10,8 @@
         "preview": "vite preview",
         "test": "vitest",
         "test:ui": "vitest --coverage --ui",
-        "test:coverage": "vitest --coverage"
+        "test:coverage": "vitest --coverage",
+        "upload": "tsc && vite build --base=. && npx @indeed/design-tech-publisher"
     },
     "dependencies": {
         "react": "^18.0.0",
@@ -38,8 +39,8 @@
     "dtpublish": {
         "configSource": "package.json",
         "projectId": {
-            "prod": "62b0ccc548e1a10041fc2644"
+            "prod": "62b4ad9d48e1a10041fc264c"
         },
-        "distPath": "/dist"
+        "distPath": "dist"
     }
 }
