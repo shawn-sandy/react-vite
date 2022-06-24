@@ -22,7 +22,7 @@ describe("<Link>", () => {
     // screen.debug(linkElement)
     expect(linkElement).toHaveAttribute('href', link)
     expect(linkElement).toHaveAttribute('class', 'normal')
-    expect(linkContainer.getByText(label)).toBeDefined()
+    expect(linkContainer.getByText(label)).toBeInTheDocument()
     screen.debug(linkContainer.getByText(label))
 
     expect(linkElement).toMatchSnapshot()
