@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 
 import App from '../App'
 
-describe('App renders corectly', () => {
+describe('App renders correctly', () => {
 
   test('renders without crashing', () => {
     render(<App />);
