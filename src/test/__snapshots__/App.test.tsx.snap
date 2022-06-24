@@ -1,5 +1,14 @@
 // Vitest Snapshot v1
 
+exports[`App renders corectly > renders the button 1`] = `
+<button
+  type="button"
+>
+  count is: 
+  0
+</button>
+`;
+
 exports[`App renders corectly > renders without crashing 1`] = `
 {
   "debug": [Function],
