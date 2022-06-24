@@ -8,20 +8,24 @@ describe("<Link>", () => {
   test("component renders as expected to", () => {
     const container = render(<Link />)
     expect(screen.getByText('Default Link')).toBeDefined()
-    screen.debug()
+    // screen.debug()
     expect(container).toMatchSnapshot()
   })
 
-  it("should accept props", () => {
+  it("should accept and display props", () => {
 
     const link = "https://google.com/"
     const label = "Search on Google"
 
     const linkContainer = render(<Link page={link}>{label}</Link>)
     const linkElement = screen.getByRole('link');
-    screen.debug(linkElement)
+    // screen.debug(linkElement)
+    expect(linkElement).toHaveAttribute('href', link)
+    expect(linkElement).toHaveAttribute('class', 'normal')
+    expect(linkContainer.getByText(label)).toBeDefined()
+    screen.debug(linkContainer.getByText(label))
+
     expect(linkElement).toMatchSnapshot()
-    expect(screen.getByText(label)).toBeDefined()
 
   })
 })

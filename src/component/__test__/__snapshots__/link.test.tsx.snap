@@ -1,5 +1,14 @@
 // Vitest Snapshot v1
 
+exports[`<Link> > Link component should accept props and display link correctly 1`] = `
+<a
+  class="normal"
+  href="https://google.com/"
+>
+  Search on Google
+</a>
+`;
+
 exports[`<Link> > component renders as expected to 1`] = `
 {
   "asFragment": [Function],
@@ -73,6 +82,15 @@ exports[`<Link> > component renders as expected to 1`] = `
   "rerender": [Function],
   "unmount": [Function],
 }
+`;
+
+exports[`<Link> > should accept and display props 1`] = `
+<a
+  class="normal"
+  href="https://google.com/"
+>
+  Search on Google
+</a>
 `;
 
 exports[`<Link> > should accept props 1`] = `
