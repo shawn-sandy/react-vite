@@ -6,7 +6,7 @@
         "start": "vite --open",
         "dev": "vite",
         "build": "tsc && vite build",
-        "package": "tsc && vite build --mode package",
+        "package": "tsc && vite build --mode package --config vite.package.config.ts",
         "preview": "vite preview",
         "test": "vitest",
         "test:ui": "vitest --coverage --ui",
