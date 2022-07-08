@@ -7,27 +7,27 @@ import { resolve } from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-      plugins: [react(), dts()],
-      esbuild: {
-        logOverride: { 'this-is-undefined-in-esm': 'silent' }
+  plugins: [react(), dts()],
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' },
+  },
+  build: {
+    outDir: resolve(__dirname, '../lib'),
+    sourcemap: true,
+    lib: {
+      entry: resolve(__dirname, 'src/component/index.ts'),
+      name: 'Link',
+      formats: ['es', 'umd'],
+      fileName: (format) => `index.${format}.js`,
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
       },
-      build: {
-        outDir: resolve(__dirname, '../lib'),
-        sourcemap: true,
-        lib: {
-          entry: resolve(__dirname, 'src/component/index.ts'),
-          name: 'Link',
-          formats: ['es', 'umd'],
-          fileName: (format) => `index.${format}.js`,
-        },
-        rollupOptions: {
-          external: ['react', 'react-dom'],
-          output: {
-            globals: {
-              react: 'React',
-              'react-dom': 'ReactDOM',
-            },
-          },
-        },
+    },
   },
 })
