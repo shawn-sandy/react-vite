@@ -2,17 +2,17 @@ import React from 'react';
 
 import { describe, expect, test, it  } from 'vitest';
 import { render, screen  } from '@testing-library/react';
-import Link from"../Link"
+import Link from"./link"
 
-describe("<Link>", () => {
-  test("component renders as expected to", () => {
+describe("<Link> test", () => {
+  test("Link component renders as expected to", () => {
     const container = render(<Link />)
     expect(screen.getByText('Default Link')).toBeDefined()
     // screen.debug()
     expect(container).toMatchSnapshot()
   })
 
-  it("should accept and display props", () => {
+  it("Link hould accept and display props", () => {
 
     const link = "https://google.com/"
     const label = "Search on Google"
