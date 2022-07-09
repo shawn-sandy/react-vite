@@ -12,7 +12,7 @@ describe("<Link> test", () => {
     expect(container).toMatchSnapshot()
   })
 
-  it("Link hould accept and display props", () => {
+  it("Link should accept and display props", () => {
 
     const link = "https://google.com/"
     const label = "Search on Google"

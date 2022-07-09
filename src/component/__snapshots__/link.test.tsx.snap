@@ -75,7 +75,7 @@ exports[`<Link> test > Link component renders as expected to 1`] = `
 }
 `;
 
-exports[`<Link> test > Link hould accept and display props 1`] = `
+exports[`<Link> test > Link should accept and display props 1`] = `
 <a
   class="normal"
   href="https://google.com/"
