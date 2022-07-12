@@ -31,4 +31,27 @@ Run `npm start` to star the dev server.
 
 ### Customize your application
 
+Change the app name, author, repository url in the `package.json`
+
+- Run `npm init` change the values as required.
+
+```bash
+
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (react-vite)
+version: (0.0.0)
+entry point: (vitest.config.js)
+git repository: (https://github.com/shawn-sandy/react-vite.git)
+
+```
+
 ### Create a new component
