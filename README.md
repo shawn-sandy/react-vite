@@ -49,7 +49,7 @@ Change the app name, author, repository url in the `package.json`
 
 ```bash
 
-# npm interactive prompts
+# npm interactive prompts sample example
 
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
@@ -65,6 +65,7 @@ package name: (react-vite)
 version: (0.0.0)
 entry point: (vitest.config.js)
 git repository: (https://github.com/shawn-sandy/react-vite.git)
+...
 
 ```
 
