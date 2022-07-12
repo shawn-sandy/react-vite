@@ -22,6 +22,7 @@ Run `npm start` to star the dev server.
 
 ## Usage
 
+
 ### Quick start
 
 - Browse to you install and run `npm start` to start the dev server and open in the browser. Use this if you are building a React application for publishing to the web
@@ -29,13 +30,26 @@ Run `npm start` to star the dev server.
 - Changes you make to this file should can be viewed in the browser.abs
 - Open the terminal and run `npm test` to test your application.
 
-### Customize your application
+### NPM script commands
+
+- Run `npm start` to start the application and open in the default brwser.
+- Run `npm run build` to build the application for production
+- Run `npm run build:package` to package for `npm` use
+- Run `npm test` to test your application in `--watch` mode.
+- Run `npm test:ui` to run your test with vite interactive [Vite Test UI](https://vitest.dev/guide/ui.html).
+- Run `npm test:coverage` to run test with coverage output
+- Run `npm test:coverage:ui` to run the vite test UI with coverage output
+- Run `npm run test:snapshot` to update the test snapshots.
+
+### Customize your application info
 
 Change the app name, author, repository url in the `package.json`
 
 - Run `npm init` change the values as required.
 
 ```bash
+
+# npm interactive prompts
 
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.

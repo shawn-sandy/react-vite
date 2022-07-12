@@ -11,6 +11,7 @@
     "test": "vitest",
     "test:ui": "vitest --coverage --ui",
     "test:coverage": "vitest --coverage",
+    "test:ui:coverage": "vitest --coverage --ui",
     "test:snapshot": "vitest --run --update"
   },
   "dependencies": {
