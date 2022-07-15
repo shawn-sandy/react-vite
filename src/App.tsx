@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import {Button} from '@fpkit/fp-btn'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -37,6 +39,7 @@ function App() {
             Vite Docs
           </a>
         </p>
+        <Button type="button" onClick={() => setCount((count) => count + 1)}>Hello</Button>
       </header>
     </div>
   )
