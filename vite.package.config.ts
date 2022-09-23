@@ -1,33 +1,37 @@
 /** @format */
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import dts from 'vite-plugin-dts'
-import { resolve } from 'node:path'
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
+import dts from "vite-plugin-dts"
+import { resolve } from "node:path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [react(), dts(
+    {insertTypesEntry: true,}
+  )],
   esbuild: {
-    logOverride: { 'this-is-undefined-in-esm': 'silent' },
+    logOverride: { "this-is-undefined-in-esm": "silent" }
   },
   build: {
-    outDir: resolve(__dirname, '../lib'),
+    outDir: resolve(__dirname, "./lib"),
     sourcemap: true,
+    // minify: 'terser',
     lib: {
-      entry: resolve(__dirname, 'src/component/index.ts'),
-      name: 'Link',
-      formats: ['es', 'umd'],
-      fileName: (format) => `index.${format}.js`,
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "Link",
+      fileName: "index"
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ["react", "react-dom"],
       output: {
+        compact: true,
         globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
-        },
-      },
-    },
-  },
+          react: "React",
+          "react-dom": "ReactDOM"
+        }
+
+      }
+    }
+  }
 })

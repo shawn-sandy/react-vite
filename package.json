@@ -15,7 +15,7 @@
     "test:snapshot": "vitest --run --update"
   },
   "dependencies": {
-    "@fpkit/fp-btn": "^0.0.11",
+    "@fpkit/fp-button": "^0.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "vite-plugin-dts": "^1.2.0"
@@ -32,12 +32,13 @@
     "c8": "^7.11.3",
     "happy-dom": "^5.3.1",
     "jsdom": "^19.0.0",
+    "parcel": "^2.6.2",
     "react-test-renderer": "^18.2.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
     "vitest": "^0.15.1"
   },
-  "description": "## Introduction",
+  "description": "Introduction",
   "main": "vitest.config.js",
   "repository": {
     "type": "git",
