@@ -13,7 +13,8 @@
     "test:ui": "vitest --coverage --ui",
     "test:coverage": "vitest --coverage",
     "test:ui:coverage": "vitest --coverage --ui",
-    "test:snapshot": "vitest --run --update"
+    "test:snapshot": "vitest --run --update",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@fpkit/fp": "^0.0.4",
@@ -33,6 +34,7 @@
     "@vitest/ui": "^0.15.1",
     "c8": "^7.11.3",
     "happy-dom": "^5.3.1",
+    "husky": "^8.0.1",
     "jsdom": "^19.0.0",
     "parcel": "^2.6.2",
     "react-test-renderer": "^18.2.0",
