@@ -17,13 +17,15 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fpkit/fp": "^0.0.4",
+    "@fpkit/fp": "^0.2.4",
     "@fpkit/fp-button": "^0.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "vite-plugin-dts": "^1.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "@previewjs/cli": "^1.15.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.1",
