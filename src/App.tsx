@@ -40,7 +40,7 @@ function App() {
         <Button type="button" onClick={() => setCount((count) => count + 1)}>Increment Count</Button>
 
         <p>
-        <FP as='h3'>FP KIt <Badge elm="span" role="note">Beta</Badge></FP>
+        <FP as='h3'>FP Kit<Badge elm="span" role="note">Beta</Badge></FP>
         </p>
 
         <p>

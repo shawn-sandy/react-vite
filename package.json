@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "vite --open",
-    "dev": "vite",
+    "start": "run-p dev package:watch",
+    "dev": "vite --open",
     "build": "tsc && vite build",
     "build:package": "tsc && vite build --mode package --config vite.package.config.ts",
     "package": "tsup --dts",
+    "package:watch": "tsup --watch --dts",
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --coverage --ui",
@@ -17,7 +18,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fpkit/fp": "^0.2.4",
+    "@fpkit/fp": "^0.2.7",
     "@fpkit/fp-button": "^0.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -38,6 +39,7 @@
     "happy-dom": "^5.3.1",
     "husky": "^8.0.1",
     "jsdom": "^19.0.0",
+    "npm-run-all": "^4.1.5",
     "parcel": "^2.6.2",
     "react-test-renderer": "^18.2.0",
     "tsup": "^6.2.3",
@@ -45,7 +47,9 @@
     "vite": "^2.9.9",
     "vitest": "^0.15.1"
   },
-  "description": "Introduction",
+  "description": "Component description",
+  "type": "module",
+  "source": "src/index.ts",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
