@@ -64,10 +64,6 @@ function App() {
           </Card>
           </p> 
       </header>
-        <Box as="main">
-            
-
-        </Box>
     </div>
   )
 }
