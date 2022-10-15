@@ -5,15 +5,13 @@ export interface DemoComponentProps {
     children: React.ReactNode;
 }
 
-export const DemoComponent: React.FC<DemoComponentProps> = ({ title, children, ...props }) => {
-    return (
-        <>
-        <h1>{title}</h1>
-        <div {...props}>
-            {children}
-        </div>
-        </>
-    )
-}
+export const DemoComponent: React.FC<DemoComponentProps> = ({ title, children, ...props }) => (
+    <>
+    <h1>{title}</h1>
+    <div {...props}>
+        {children}
+    </div>
+    </>
+)
 
 export default DemoComponent;
