@@ -23,6 +23,7 @@ Run `npm start` to start the dev server.
 ### Quick start
 
 - Browse to your install and run `npm start` to start the dev server and open it in the browser. Use this if you are building a React application for publishing to the web
+- Run `npm start:package` for building npm packages/components
 - Browse `/src` directory to view and edit the source code.
 - Changes you make to this file should can be viewed in the browser.
 - Open the terminal and run `npm test` to test your application.
