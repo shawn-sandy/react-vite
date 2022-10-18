@@ -3,7 +3,8 @@
   "private": false,
   "version": "0.0.0",
   "scripts": {
-    "start": "run-p dev package:watch",
+    "start": "run-s dev",
+    "start:package": "run-p dev package:watch",
     "dev": "vite --open",
     "build": "tsc && vite build",
     "build:package": "tsc && vite build --mode package --config vite.package.config.ts",
