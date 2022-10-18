@@ -22,14 +22,14 @@ Run `npm start` to start the dev server.
 
 ### Quick start
 
-Browse to your install and run `npm start` to start the dev server and open it in the browser. Use this if you are building a React application for publishing to the web
+- Browse to your install and run `npm start` to start the dev server and open it in the browser. Use this if you are building a React application for publishing to the web
 - Browse `/src` directory to view and edit the source code.
-- Changes you make to this file should can be viewed in the browser.abs
+- Changes you make to this file should can be viewed in the browser.
 - Open the terminal and run `npm test` to test your application.
 
 ### NPM script commands
 
-- Run `npm start` to start the application and open it in the default brwser.
+- Run `npm start` to start the application and open it in the default browser.
 - Run `npm run build` to build the application for production
 - Run `npm run build:package` to package for `npm` use
 - Run `npm test` to test your application in `--watch` mode.
@@ -67,3 +67,29 @@ git repository: (https://github.com/shawn-sandy/react-vite.git)
 ```
 
 ### Create a new component
+
+- ...soon
+
+### License
+
+MIT License
+
+Copyright (c) 2022 Shawn Sandy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
