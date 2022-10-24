@@ -9,7 +9,7 @@ export const DemoComponent: React.FC<DemoComponentProps> = ({ title, children, .
     return (
         <>
         <h1>{title}</h1>
-        <div {...props}>
+        <div>
             {children}
         </div>
         </>
